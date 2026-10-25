@@ -11,6 +11,19 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.4.0",
+          "date": "2026-10-26",
+          "tag": "until-v1.4.0",
+          "file": "Until-v1.4.0.apk",
+          "size": 3314078,
+          "notes": [
+            "Until tells you when a new version is out (on Home, by notification, and in Settings > Check for updates).",
+            "Permanent signing key, so future updates install over this version.",
+            "Privacy policy, linked from Settings."
+          ],
+          "important": "Until now has its permanent signing key, so this one update can't install over an older version. Once only: in Until go to Settings > Google Drive backup and back up (or Save a backup file), uninstall the old Until, install 1.4.0, then restore. Future updates install normally."
+        },
+        {
           "version": "1.3.0",
           "date": "2026-10-26",
           "tag": "until-v1.3.0",
