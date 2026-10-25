@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="144" height="144">
+  <!-- Future Me launcher icon (res/drawable/ic_launcher_foreground.xml on @color/icon_bg). -->
+  <rect x="18" y="18" width="72" height="72" fill="#5CBFF5"/>
+  <path d="M35,38 L73,38 Q78,38 78,43 L78,69 Q78,74 73,74 L35,74 Q30,74 30,69 L30,43 Q30,38 35,38 Z" fill="#FFFFFF" stroke="#111317" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M32,41 L54,57 L76,41" fill="none" stroke="#111317" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46.5,57 a7.5,7.5 0 1,0 15,0 a7.5,7.5 0 1,0 -15,0" fill="#86E294" stroke="#111317" stroke-width="3"/>
+  <path d="M82,24 C83,29 83,29 88,30 C83,31 83,31 82,36 C81,31 81,31 76,30 C81,29 81,29 82,24 Z" fill="#FFFFFF"/>
+</svg>

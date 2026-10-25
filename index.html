@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Beaver Apps</title>
+<meta name="description" content="The latest versions of Digital Beaver's Android apps: Until, Ultimate HD WA Status and Future Me. Download the APK and see what's new.">
+<meta name="theme-color" content="#F4F4F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0B0F" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #F45D0B;
+    --canvas: #F4F4F7;
+    --card: #FFFFFF;
+    --soft: #EAEAF0;
+    --ink: #121217;
+    --muted: #6E6E7A;
+    --line: #E2E2E9;
+    --on-orange: #FFFFFF;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #0B0B0F;
+      --card: #17171D;
+      --soft: #24242C;
+      --ink: #F4F4F7;
+      --muted: #9C9CA8;
+      --line: #2A2A33;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px calc(40px + env(safe-area-inset-bottom)); }
+  a { color: inherit; }
+
+  /* Header */
+  .top { display: flex; align-items: center; gap: 14px; padding: 8px 4px 20px; }
+  .top img { width: 52px; height: 52px; border-radius: 14px; flex: none; }
+  .top h1 { margin: 0; font-size: 26px; line-height: 1.15; font-weight: 800; letter-spacing: -0.6px; }
+  .top p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .top .grow { flex: 1; min-width: 0; }
+
+  .label { margin: 26px 4px 10px; font-size: 12px; font-weight: 700; letter-spacing: 0.7px; text-transform: uppercase; color: var(--muted); }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    height: 48px; padding: 0 20px; border-radius: 999px; border: 0;
+    font: inherit; font-weight: 700; font-size: 15px; text-decoration: none; cursor: pointer;
+  }
+  .btn.primary { background: var(--orange); color: var(--on-orange); }
+  .btn.primary:hover { filter: brightness(1.05); }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+  .btn.small { height: 40px; padding: 0 16px; font-size: 14px; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn[hidden] { display: none; }
+
+  /* Latest releases */
+  .feed { list-style: none; margin: 0; padding: 0; background: var(--card); border-radius: 24px; overflow: hidden; }
+  .feed li + li { border-top: 1px solid var(--line); }
+  .feed a { display: flex; align-items: center; gap: 14px; padding: 14px 18px; text-decoration: none; }
+  .feed img { width: 40px; height: 40px; border-radius: 11px; flex: none; }
+  .feed .what { flex: 1; min-width: 0; }
+  .feed .name { font-weight: 700; }
+  .feed .sub { color: var(--muted); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .badge {
+    display: inline-block; padding: 3px 10px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase;
+    background: var(--orange); color: var(--on-orange); flex: none;
+  }
+
+  /* App cards */
+  .apps { display: grid; gap: 14px; }
+  .app { background: var(--card); border-radius: 28px; padding: 22px; scroll-margin-top: 16px; }
+  .app-head { display: flex; align-items: center; gap: 16px; }
+  .app-head img { width: 64px; height: 64px; border-radius: 18px; flex: none; }
+  .app-head .grow { flex: 1; min-width: 0; }
+  .app h3 { margin: 0; font-size: 21px; line-height: 1.2; font-weight: 800; letter-spacing: -0.3px; }
+  .meta { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  .tagline { margin: 16px 0 18px; color: var(--ink); }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .actions .btn.primary { flex: 1 1 220px; }
+  .app h4 { margin: 22px 0 6px; font-size: 15px; font-weight: 700; }
+  .app ul { margin: 0; padding-left: 20px; }
+  .app li { margin: 4px 0; }
+  .links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+  .links a { color: var(--muted); }
+
+  details { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }
+  summary { cursor: pointer; font-weight: 700; font-size: 15px; list-style: none; display: flex; align-items: center; gap: 8px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: ""; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .15s; margin-right: 4px; }
+  details[open] summary::before { transform: rotate(45deg); }
+  .old { margin-top: 10px; }
+  .old .v { margin-top: 14px; }
+  .old .v-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .old .v-head strong { font-size: 15px; }
+  .old .v-head span { color: var(--muted); font-size: 13px; }
+  .old .v-head a { font-size: 13px; font-weight: 600; color: var(--orange); }
+  .old ul { color: var(--muted); font-size: 14px; }
+
+  /* Help */
+  .card { background: var(--card); border-radius: 24px; padding: 18px 22px; }
+  .card details { margin: 0; border: 0; padding: 0; }
+  .card ol { margin: 12px 0 4px; padding-left: 22px; }
+  .card li { margin: 6px 0; }
+  .card p { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
+
+  .state { text-align: center; color: var(--muted); padding: 40px 16px; }
+  footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 13px; }
+  .toast {
+    position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translateX(-50%);
+    background: var(--ink); color: var(--canvas); padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 600;
+    opacity: 0; transition: opacity .2s; pointer-events: none;
+  }
+  .toast.show { opacity: 1; }
+  :focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img src="icons/icon.svg" alt="">
+    <div class="grow">
+      <h1>Digital Beaver Apps</h1>
+      <p>The latest versions of our Android apps</p>
+    </div>
+    <button class="btn ghost small" id="install" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+      Install
+    </button>
+  </header>
+
+  <main id="main">
+    <p class="state" id="state">Loading releases…</p>
+  </main>
+
+  <p class="label">Installing</p>
+  <div class="card">
+    <details>
+      <summary>How to install an APK</summary>
+      <ol>
+        <li>Tap <strong>Download APK</strong> on this phone.</li>
+        <li>Open the downloaded file (from the notification, or Files → Downloads).</li>
+        <li>If Android asks, allow your browser to <strong>install unknown apps</strong>, then go back and tap Install.</li>
+        <li>Updating? Install the new version over the old one. Your data stays.</li>
+      </ol>
+      <p>These apps aren't on Google Play yet, so Play Protect may ask you to confirm. They're built and signed by Digital Beaver.</p>
+    </details>
+  </div>
+
+  <footer>
+    <p>Digital Beaver TZ · Arusha, Tanzania</p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+  const main = document.getElementById("main");
+  const DOWNLOAD_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>';
+  const SHARE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>';
+
+  // ---- "New" badges: releases you haven't seen on this device yet.
+  const SEEN_KEY = "dba-seen-releases";
+  const readSeen = () => { try { return JSON.parse(localStorage.getItem(SEEN_KEY)); } catch (e) { return null; } };
+  const writeSeen = (list) => { try { localStorage.setItem(SEEN_KEY, JSON.stringify(list)); } catch (e) { /* private mode */ } };
+
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const fmtDate = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  const fmtSize = (b) => b ? (b / 1048576).toFixed(1) + " MB" : "";
+  const key = (app, r) => app.id + "@" + r.version;
+  const downloadUrl = (repo, r) => r.tag && r.file ? `https://github.com/${repo}/releases/download/${encodeURIComponent(r.tag)}/${encodeURIComponent(r.file)}` : null;
+
+  function toast(text) {
+    const t = document.getElementById("toast");
+    t.textContent = text;
+    t.classList.add("show");
+    clearTimeout(toast.timer);
+    toast.timer = setTimeout(() => t.classList.remove("show"), 2200);
+  }
+
+  async function share(app) {
+    const url = location.href.split("#")[0] + "#" + app.id;
+    try {
+      if (navigator.share) { await navigator.share({ title: app.name, text: app.tagline, url }); return; }
+      await navigator.clipboard.writeText(url);
+      toast("Link copied");
+    } catch (e) { /* cancelled */ }
+  }
+
+  function render(data) {
+    const repo = data.repo;
+    const apps = data.apps.filter((a) => a.releases && a.releases.length);
+    const seen = readSeen();
+    const weekAgo = Date.now() - 7 * 86400000;
+    // First visit: everything from the last week counts as new. Later visits: whatever wasn't here before.
+    const isNew = (app, r) => seen ? !seen.includes(key(app, r)) : new Date(r.date).getTime() >= weekAgo && r === app.releases[0];
+
+    // Apps with the most recent release first.
+    apps.sort((a, b) => b.releases[0].date.localeCompare(a.releases[0].date));
+
+    const feed = apps.flatMap((app) => app.releases.filter((r) => downloadUrl(repo, r)).map((r) => ({ app, r })))
+      .sort((x, y) => y.r.date.localeCompare(x.r.date))
+      .slice(0, 6);
+
+    let html = "";
+    if (feed.length) {
+      html += '<p class="label">Latest releases</p><ol class="feed">';
+      for (const { app, r } of feed) {
+        html += `<li><a href="#${esc(app.id)}">
+          <img src="${esc(app.icon)}" alt="">
+          <span class="what"><span class="name">${esc(app.name)} ${esc(r.version)}</span><br>
+          <span class="sub">${esc(fmtDate(r.date))} · ${esc(r.notes[0] || "")}</span></span>
+          ${isNew(app, r) ? '<span class="badge">New</span>' : ""}
+        </a></li>`;
+      }
+      html += "</ol>";
+    }
+
+    html += '<p class="label">Apps</p><div class="apps">';
+    for (const app of apps) {
+      const latest = app.releases.find((r) => downloadUrl(repo, r)) || app.releases[0];
+      const url = downloadUrl(repo, latest);
+      const meta = [`Version ${latest.version}`, fmtDate(latest.date), fmtSize(latest.size), app.minAndroid ? `Android ${app.minAndroid}+` : ""].filter(Boolean);
+      const older = app.releases.filter((r) => r !== latest);
+      html += `<article class="app" id="${esc(app.id)}">
+        <div class="app-head">
+          <img src="${esc(app.icon)}" alt="">
+          <div class="grow"><h3>${esc(app.name)}</h3><p class="meta">${meta.map(esc).join(" · ")}</p></div>
+          ${isNew(app, latest) ? '<span class="badge">New</span>' : ""}
+        </div>
+        <p class="tagline">${esc(app.tagline)}</p>
+        <div class="actions">
+          ${url ? `<a class="btn primary" href="${esc(url)}" download>${DOWNLOAD_ICON} Download APK</a>` : '<span class="meta">Download coming soon</span>'}
+          <button class="btn ghost" data-share="${esc(app.id)}">${SHARE_ICON} Share</button>
+        </div>
+        <h4>What's new in ${esc(latest.version)}</h4>
+        <ul>${latest.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>
+        ${app.links && app.links.length ? `<div class="links">${app.links.map((l) => `<a href="${esc(l.url)}" rel="noopener">${esc(l.label)}</a>`).join("")}</div>` : ""}
+        ${older.length ? `<details><summary>Earlier versions</summary><div class="old">${older.map((r) => {
+          const u = downloadUrl(repo, r);
+          return `<div class="v"><div class="v-head"><strong>${esc(r.version)}</strong><span>${esc(fmtDate(r.date))}</span>${u ? `<a href="${esc(u)}" download>Download</a>` : ""}</div>
+            <ul>${r.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></div>`;
+        }).join("")}</div></details>` : ""}
+      </article>`;
+    }
+    html += "</div>";
+    main.innerHTML = html;
+
+    main.querySelectorAll("[data-share]").forEach((b) => b.addEventListener("click", () => share(apps.find((a) => a.id === b.dataset.share))));
+
+    // Everything on screen now counts as seen for the next visit.
+    writeSeen(apps.flatMap((a) => a.releases.map((r) => key(a, r))));
+
+    if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
+  }
+
+  fetch("releases.json", { cache: "no-cache" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(render)
+    .catch(() => {
+      main.innerHTML = '<p class="state">Couldn’t load the releases. Check your connection and try again.</p>';
+    });
+
+  // ---- Install as an app (Android Chrome, Edge, desktop Chrome).
+  let deferred = null;
+  const installBtn = document.getElementById("install");
+  window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferred = e; installBtn.hidden = false; });
+  installBtn.addEventListener("click", async () => {
+    if (!deferred) return;
+    deferred.prompt();
+    await deferred.userChoice;
+    deferred = null;
+    installBtn.hidden = true;
+  });
+  window.addEventListener("appinstalled", () => { installBtn.hidden = true; toast("Installed"); });
+
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+  }
+})();
+</script>
+</body>
+</html>

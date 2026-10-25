@@ -1,0 +1,126 @@
+{
+  "repo": "SteveBodyJr/apps",
+  "apps": [
+    {
+      "id": "until",
+      "name": "Until",
+      "icon": "icons/until.svg",
+      "color": "#F45D0B",
+      "tagline": "Count down to anything, and count up from the days that matter: events, birthdays, subscriptions and deadlines, with reminders, widgets and Google Drive backup.",
+      "package": "com.digitalbeavertz.until",
+      "minAndroid": "8.0",
+      "releases": [
+        {
+          "version": "1.2.0",
+          "date": "2026-10-26",
+          "notes": [
+            "Categories screen: see how many moments each category has and what comes next, and open one to see only its moments.",
+            "\"Add to Family\" starts a new moment already in that category."
+          ]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-10-26",
+          "notes": [
+            "Screen styles for each countdown: Classic, Dots, Clock, Ring, Photo and Minimal.",
+            "Search on Home, and a cards or list view.",
+            "Fixed choosing a photo for a card."
+          ]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-10-26",
+          "notes": [
+            "First version: events, count-ups, birthdays, subscriptions and deadlines, repeating countdowns, your own categories, reminders and milestones, widgets, sharing as a picture, and backups."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdstatus",
+      "name": "Ultimate HD WA Status",
+      "icon": "icons/hdstatus.svg",
+      "color": "#0E9466",
+      "tagline": "Sharper WhatsApp Status videos: splits long videos into Status-length parts at the best quality, adds music and a watermark, and saves statuses you've seen.",
+      "package": "com.digitalbeavertz.ultimatehdwastatus",
+      "minAndroid": "8.0",
+      "releases": [
+        {
+          "version": "1.10",
+          "date": "2026-10-25",
+          "notes": [
+            "Quality-first engine: presets are now quality levels (Max 1080p, Balanced 720p, Safe 720p) instead of file-size targets.",
+            "Never enlarges small videos, and keeps the original file untouched when it's already WhatsApp-ready.",
+            "Checks free space before starting."
+          ]
+        },
+        {
+          "version": "1.9",
+          "date": "2026-10-16",
+          "notes": ["New name, Ultimate HD WA Status, and a new icon."]
+        },
+        {
+          "version": "1.8",
+          "date": "2026-10-15",
+          "notes": ["Watermark: put your name or brand on the video, in any corner, in three sizes."]
+        },
+        {
+          "version": "1.7",
+          "date": "2026-10-15",
+          "notes": ["Preview and trim background music; higher music quality (192 kbps)."]
+        },
+        {
+          "version": "1.6",
+          "date": "2026-10-15",
+          "notes": ["Background music for every part, with smooth fades. Works with photos too."]
+        }
+      ]
+    },
+    {
+      "id": "futureme",
+      "name": "Future Me",
+      "icon": "icons/futureme.svg",
+      "color": "#5CBFF5",
+      "tagline": "A private time-capsule diary: letters to your future self (or to someone else), snapshots, predictions and milestones, encrypted on your phone and backed up to your Google Drive.",
+      "package": "com.digitalbeavertz.futureme",
+      "minAndroid": "8.0",
+      "links": [
+        {"label": "Home page", "url": "https://stevebodyjr.github.io/futureme/"},
+        {"label": "Privacy policy", "url": "https://stevebodyjr.github.io/futureme/privacy.html"}
+      ],
+      "releases": [
+        {
+          "version": "1.4.0",
+          "date": "2026-10-25",
+          "notes": [
+            "Search everything you wrote (sealed letters only by name, so nothing is spoiled).",
+            "Backup status on Home, and a gentle weekly reminder when new entries aren't backed up."
+          ]
+        },
+        {
+          "version": "1.3",
+          "date": "2026-10-24",
+          "notes": [
+            "Letters to other people are delivered into their Google Drive on the chosen date.",
+            "Live countdown on sealed letters; safer backups and restores."
+          ]
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-10-24",
+          "notes": ["Everything is encrypted on the phone; backups always use a password."]
+        },
+        {
+          "version": "1.1.0",
+          "date": "2026-10-23",
+          "notes": ["New design, and app lock with PIN, fingerprint or face."]
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-10-23",
+          "notes": ["First version."]
+        }
+      ]
+    }
+  ]
+}

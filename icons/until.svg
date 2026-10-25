@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="144" height="144">
+  <!-- Until launcher icon (res/drawable/ic_launcher_*.xml), visible 72dp of the 108dp canvas. -->
+  <rect x="18" y="18" width="72" height="72" fill="#F45D0B"/>
+  <path d="M54,33 A21,21 0 1,1 33,54" fill="none" stroke="#FFFFFF" stroke-width="7.5" stroke-linecap="round"/>
+  <circle cx="54" cy="54" r="6" fill="#FFFFFF"/>
+</svg>
