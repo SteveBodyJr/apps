@@ -11,6 +11,17 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.2.1",
+          "date": "2026-10-26",
+          "tag": "until-v1.2.1",
+          "file": "Until-v1.2.1.apk",
+          "size": 3297658,
+          "notes": [
+            "All cards on Home and in categories are the same size, so they line up in neat rows.",
+            "Every card shows its date, or its price for subscriptions."
+          ]
+        },
+        {
           "version": "1.2.0",
           "date": "2026-10-26",
           "notes": [
@@ -46,6 +57,17 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.11",
+          "date": "2026-10-26",
+          "tag": "hdstatus-v1.11",
+          "file": "UltimateHDWAStatus-v1.11.apk",
+          "size": 3038146,
+          "notes": [
+            "No ads: tapping Process starts right away.",
+            "Fully offline: the app no longer needs internet access."
+          ]
+        },
+        {
           "version": "1.10",
           "date": "2026-10-25",
           "notes": [
@@ -57,22 +79,30 @@
         {
           "version": "1.9",
           "date": "2026-10-16",
-          "notes": ["New name, Ultimate HD WA Status, and a new icon."]
+          "notes": [
+            "New name, Ultimate HD WA Status, and a new icon."
+          ]
         },
         {
           "version": "1.8",
           "date": "2026-10-15",
-          "notes": ["Watermark: put your name or brand on the video, in any corner, in three sizes."]
+          "notes": [
+            "Watermark: put your name or brand on the video, in any corner, in three sizes."
+          ]
         },
         {
           "version": "1.7",
           "date": "2026-10-15",
-          "notes": ["Preview and trim background music; higher music quality (192 kbps)."]
+          "notes": [
+            "Preview and trim background music; higher music quality (192 kbps)."
+          ]
         },
         {
           "version": "1.6",
           "date": "2026-10-15",
-          "notes": ["Background music for every part, with smooth fades. Works with photos too."]
+          "notes": [
+            "Background music for every part, with smooth fades. Works with photos too."
+          ]
         }
       ]
     },
@@ -85,10 +115,28 @@
       "package": "com.digitalbeavertz.futureme",
       "minAndroid": "8.0",
       "links": [
-        {"label": "Home page", "url": "https://stevebodyjr.github.io/futureme/"},
-        {"label": "Privacy policy", "url": "https://stevebodyjr.github.io/futureme/privacy.html"}
+        {
+          "label": "Home page",
+          "url": "https://stevebodyjr.github.io/futureme/"
+        },
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/futureme/privacy.html"
+        }
       ],
       "releases": [
+        {
+          "version": "1.5.0",
+          "date": "2026-10-25",
+          "tag": "futureme-v1.5.0",
+          "file": "FutureMe-v1.5.0.apk",
+          "size": 25663702,
+          "notes": [
+            "Home-screen widgets: a countdown to your next sealed letter, and quick add for letters, snapshots, predictions and milestones.",
+            "With the app lock on, the widget hides titles and names.",
+            "Back from a widget or notification now goes to Home."
+          ]
+        },
         {
           "version": "1.4.0",
           "date": "2026-10-25",
@@ -108,17 +156,23 @@
         {
           "version": "1.2.0",
           "date": "2026-10-24",
-          "notes": ["Everything is encrypted on the phone; backups always use a password."]
+          "notes": [
+            "Everything is encrypted on the phone; backups always use a password."
+          ]
         },
         {
           "version": "1.1.0",
           "date": "2026-10-23",
-          "notes": ["New design, and app lock with PIN, fingerprint or face."]
+          "notes": [
+            "New design, and app lock with PIN, fingerprint or face."
+          ]
         },
         {
           "version": "1.0.0",
           "date": "2026-10-23",
-          "notes": ["First version."]
+          "notes": [
+            "First version."
+          ]
         }
       ]
     }
