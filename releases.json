@@ -11,6 +11,18 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.3.0",
+          "date": "2026-10-26",
+          "tag": "until-v1.3.0",
+          "file": "Until-v1.3.0.apk",
+          "size": 3314074,
+          "notes": [
+            "Home-screen widgets follow each moment's screen style: Classic, Dots, Clock, Ring, Photo or Minimal.",
+            "Categories screen: open a category to see only its moments, and add straight into it.",
+            "All cards are the same size, and every card shows its date or price."
+          ]
+        },
+        {
           "version": "1.2.1",
           "date": "2026-10-26",
           "tag": "until-v1.2.1",
