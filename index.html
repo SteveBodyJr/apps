@@ -105,6 +105,7 @@
   .app h4 { margin: 22px 0 6px; font-size: 15px; font-weight: 700; }
   .app ul { margin: 0; padding-left: 20px; }
   .app li { margin: 4px 0; }
+  .notice { margin: 14px 0 0; padding: 12px 14px; border-radius: 16px; border-left: 4px solid var(--orange); background: var(--soft); font-size: 14px; }
   .links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
   .links a { color: var(--muted); }
 
@@ -258,6 +259,7 @@
           ${url ? `<a class="btn primary" href="${esc(url)}" download>${DOWNLOAD_ICON} Download APK</a>` : '<span class="meta">Download coming soon</span>'}
           <button class="btn ghost icon" data-share="${esc(app.id)}" aria-label="Share ${esc(app.name)}" title="Share">${SHARE_ICON}</button>
         </div>
+        ${latest.important ? `<p class="notice"><strong>Before you update:</strong> ${esc(latest.important)}</p>` : ""}
         <h4>What's new in ${esc(latest.version)}</h4>
         <ul>${latest.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>
         ${app.links && app.links.length ? `<div class="links">${app.links.map((l) => `<a href="${esc(l.url)}" rel="noopener">${esc(l.label)}</a>`).join("")}</div>` : ""}

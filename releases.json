@@ -57,6 +57,12 @@
             "First version: events, count-ups, birthdays, subscriptions and deadlines, repeating countdowns, your own categories, reminders and milestones, widgets, sharing as a picture, and backups."
           ]
         }
+      ],
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/until/privacy.html"
+        }
       ]
     },
     {

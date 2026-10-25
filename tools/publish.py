@@ -47,6 +47,7 @@ def main():
     p.add_argument("apk", help="path to the APK file")
     p.add_argument("--note", action="append", default=[], help="one line of 'what's new' (repeat for more)")
     p.add_argument("--date", default=datetime.date.today().isoformat())
+    p.add_argument("--important", help="a notice people must read before updating (shown on the page and in the app)")
     p.add_argument("--no-push", action="store_true")
     a = p.parse_args()
 
@@ -67,6 +68,8 @@ def main():
         sys.exit(f"{tag} is already published.")
 
     notes_md = "\n".join(f"- {n}" for n in a.note)
+    if a.important:
+        notes_md = f"**Before you update:** {a.important}\n\n" + notes_md
     run([gh(), "release", "create", tag, a.apk, "--repo", data["repo"],
          "--title", f"{app['name']} {a.version}", "--notes", notes_md])
 
@@ -74,6 +77,8 @@ def main():
         "version": a.version, "date": a.date, "tag": tag, "file": name,
         "size": os.path.getsize(a.apk), "notes": a.note,
     }
+    if a.important:
+        release["important"] = a.important
     app["releases"] = [release] + [r for r in app["releases"] if r["version"] != a.version]
     with open(DATA, "w", encoding="utf-8", newline="\n") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
