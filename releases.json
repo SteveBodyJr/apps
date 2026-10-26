@@ -11,6 +11,18 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.5.0",
+          "date": "2026-10-26",
+          "tag": "until-v1.5.0",
+          "file": "Until-v1.5.0.apk",
+          "size": 3930710,
+          "notes": [
+            "Shareable countdowns: send a link to a live countdown page anyone can open; Add to Until opens it in the app",
+            "App lock: passcode with fingerprint or face, screenshots blocked and widget titles hidden while on",
+            "Category tiles on Home and album covers: each category gets its own icon, colour and cover photo"
+          ]
+        },
+        {
           "version": "1.4.0",
           "date": "2026-10-26",
           "tag": "until-v1.4.0",
