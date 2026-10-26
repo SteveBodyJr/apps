@@ -224,9 +224,10 @@
     // Apps with the most recent release first.
     apps.sort((a, b) => b.releases[0].date.localeCompare(a.releases[0].date));
 
-    const feed = apps.flatMap((app) => app.releases.filter((r) => downloadUrl(repo, r)).map((r) => ({ app, r })))
-      .sort((x, y) => y.r.date.localeCompare(x.r.date))
-      .slice(0, 6);
+    // Only the latest version of each app (older versions aren't listed).
+    const feed = apps.map((app) => ({ app, r: app.releases.find((r) => downloadUrl(repo, r)) }))
+      .filter((x) => x.r)
+      .sort((x, y) => y.r.date.localeCompare(x.r.date));
 
     let html = "";
     if (feed.length) {
@@ -247,7 +248,6 @@
       const latest = app.releases.find((r) => downloadUrl(repo, r)) || app.releases[0];
       const url = downloadUrl(repo, latest);
       const meta = [`Version ${latest.version}`, fmtDate(latest.date), fmtSize(latest.size), app.minAndroid ? `Android ${app.minAndroid}+` : ""].filter(Boolean);
-      const older = app.releases.filter((r) => r !== latest);
       html += `<article class="app" id="${esc(app.id)}">
         <div class="app-head">
           <img src="${esc(app.icon)}" alt="">
@@ -263,11 +263,6 @@
         <h4>What's new in ${esc(latest.version)}</h4>
         <ul>${latest.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>
         ${app.links && app.links.length ? `<div class="links">${app.links.map((l) => `<a href="${esc(l.url)}" rel="noopener">${esc(l.label)}</a>`).join("")}</div>` : ""}
-        ${older.length ? `<details><summary>Earlier versions</summary><div class="old">${older.map((r) => {
-          const u = downloadUrl(repo, r);
-          return `<div class="v"><div class="v-head"><strong>${esc(r.version)}</strong><span>${esc(fmtDate(r.date))}</span>${u ? `<a href="${esc(u)}" download>Download</a>` : ""}</div>
-            <ul>${r.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></div>`;
-        }).join("")}</div></details>` : ""}
       </article>`;
     }
     html += "</div>";
