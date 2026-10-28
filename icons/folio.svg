@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="144" height="144">
+  <!-- Folio launcher icon (res/drawable/ic_launcher_foreground.xml on @color/folio_blue). -->
+  <rect x="18" y="18" width="72" height="72" fill="#5468F6"/>
+  <path d="M39,31 L62,31 L71,40 L71,77 Q71,79 69,79 L39,79 Q37,79 37,77 L37,33 Q37,31 39,31 Z" fill="#FFFFFF"/>
+  <path d="M62,31 L62,40 L71,40 Z" fill="#B9C2FB"/>
+  <path d="M44,56 L64,56" stroke="#5468F6" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M44,65 L58,65" stroke="#5468F6" stroke-width="3.4" stroke-linecap="round"/>
+</svg>

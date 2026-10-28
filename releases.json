@@ -11,6 +11,17 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.5.1",
+          "date": "2026-10-28",
+          "tag": "until-v1.5.1",
+          "file": "Until-v1.5.1.apk",
+          "size": 3930706,
+          "notes": [
+            "New moments start on today's date, so the date picker opens on today.",
+            "Choose when all-day reminders arrive right on the edit screen: when the day starts (00:00), in the morning (09:00), or any other time."
+          ]
+        },
+        {
           "version": "1.5.0",
           "date": "2026-10-26",
           "tag": "until-v1.5.0",
@@ -215,6 +226,36 @@
           "date": "2026-10-23",
           "notes": [
             "First version."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "folio",
+      "name": "Folio",
+      "icon": "icons/folio.svg",
+      "color": "#5468F6",
+      "tagline": "Your passports, IDs, cards and insurance in one encrypted wallet: scan or import documents, get reminded before they expire, fill and sign PDFs, and back up to your own Google Drive.",
+      "package": "com.digitalbeavertz.folio",
+      "minAndroid": "8.0",
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/folio/privacy.html"
+        }
+      ],
+      "releases": [
+        {
+          "version": "1.3.0",
+          "date": "2026-10-27",
+          "tag": "folio-v1.3.0",
+          "file": "Folio-v1.3.0.apk",
+          "size": 4550168,
+          "notes": [
+            "Fill & sign: add text, today's date, ticks, crosses, highlights and your saved signature to PDFs, photos and scans. Saves a new copy; the original is untouched.",
+            "Expiring next widget for the home screen (shows document types, not names, unless you turn names on).",
+            "Automatic Google Drive backup a minute after you add or change something (Wi-Fi only by default).",
+            "Encrypted wallet for passports, IDs, licences, insurance and cards, with expiry reminders, scanner, document reader and convert to PDF."
           ]
         }
       ]
