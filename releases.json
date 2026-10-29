@@ -111,6 +111,18 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.12",
+          "date": "2026-10-30",
+          "tag": "hdstatus-v1.12",
+          "file": "UltimateHDWAStatus-v1.12.apk",
+          "size": 2038210,
+          "notes": [
+            "Fixed: 1.11 closed as soon as it opened. It now opens normally.",
+            "Sharper landscape videos: each video keeps its own shape (landscape stays 1920x1080) instead of getting black bars inside a tall frame, so WhatsApp keeps about 3x more detail.",
+            "Square and 3:4 photos keep their shape too."
+          ]
+        },
+        {
           "version": "1.11",
           "date": "2026-10-26",
           "tag": "hdstatus-v1.11",
