@@ -301,6 +301,36 @@
           ]
         }
       ]
+    },
+    {
+      "id": "mylibrary",
+      "name": "My Library",
+      "icon": "icons/mylibrary.svg",
+      "color": "#141414",
+      "tagline": "A bookshelf for your PDFs: arrange books on shelves by subject or course, read with a realistic page turn and paper sounds, zoom into small print, and pick up where you left off. Works offline, no account.",
+      "package": "com.digitalbeavertz.maktaba",
+      "minAndroid": "8.0",
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/mylibrary/privacy.html"
+        }
+      ],
+      "releases": [
+        {
+          "version": "1.2.0",
+          "date": "2026-10-30",
+          "tag": "mylibrary-v1.2.0",
+          "file": "My-Library-v1.2.0.apk",
+          "size": 1813655,
+          "notes": [
+            "Shelves for your PDFs: make one per subject, course or module, drag books between them, and choose a modern white bookcase or a real wooden one.",
+            "Realistic page turn: drag a corner and the page curls, or tap the edge. Soft paper sounds when you open a book and turn pages (you can switch them off).",
+            "Zoom: pinch up to 5x or double-tap the middle of a page; small print is redrawn sharp.",
+            "Search, recently read, continue where you left off, white, cream or night paper, and add books by sharing a PDF from WhatsApp, email or Files."
+          ]
+        }
+      ]
     }
   ]
 }

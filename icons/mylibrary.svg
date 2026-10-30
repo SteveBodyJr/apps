@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="144" height="144">
+  <!-- My Library launcher icon (res/drawable/ic_launcher_foreground.xml on @color/launcher_bg). -->
+  <rect x="18" y="18" width="72" height="72" fill="#141414"/>
+  <path fill="#E2C79A" d="M25,74h58v6h-58z"/>
+  <path fill="#F6EEDF" d="M29,40h10v34h-10z"/>
+  <path fill="#2F6B4F" d="M29,45h10v2h-10zM29,67h10v2h-10z"/>
+  <path fill="#E8B04B" d="M41,33h11v41h-11z"/>
+  <path fill="#2F6B4F" d="M41,38h11v2.5h-11zM41,66h11v2.5h-11z"/>
+  <path fill="#F6EEDF" d="M54,43h9v31h-9z"/>
+  <path fill="#2F6B4F" d="M54,48h9v2h-9z"/>
+  <path fill="#D9673F" d="M64.5,74l8.2,0l9.8,-29.6l-8.1,-2.7z"/>
+</svg>

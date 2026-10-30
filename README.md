@@ -13,7 +13,7 @@ py tools/publish.py until 1.3.0 "C:/Users/user/Downloads/My APKs/Until/Until-v1.
 ```
 
 This uploads the APK as a release of this repo, adds it to `releases.json`, commits and pushes.
-App ids: `until`, `hdstatus`, `futureme`, `folio`, `passwordvault`. A new app needs an entry in `releases.json` first
+App ids: `until`, `hdstatus`, `futureme`, `folio`, `passwordvault`, `mylibrary`. A new app needs an entry in `releases.json` first
 (id, name, icon in `icons/`, tagline, package, minAndroid).
 
 ## Files
