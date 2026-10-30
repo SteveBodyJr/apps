@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Password Vault – Privacy policy</title>
+<meta name="description" content="How Password Vault, the offline password manager by Digital Beaver, handles your data.">
+<link rel="icon" href="../icons/passwordvault.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --accent: #2F5BEA; --canvas: #F4F4F7; --card: #FFFFFF; --ink: #121217; --muted: #6E6E7A; --line: #E2E2E9; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --accent: #8CA6FA; --canvas: #0B0B0F; --card: #17171D; --ink: #F4F4F7; --muted: #9C9CA8; --line: #2A2A33; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--canvas); color: var(--ink); font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 28px 16px 48px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+  header img { width: 56px; height: 56px; border-radius: 16px; }
+  h1 { margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800; letter-spacing: -0.6px; }
+  .sub { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .card { background: var(--card); border-radius: 24px; padding: 6px 22px 18px; }
+  h2 { font-size: 17px; font-weight: 800; margin: 22px 0 6px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; margin: 6px 0; }
+  a { color: var(--accent); }
+  .short { border-left: 4px solid var(--accent); padding: 2px 0 2px 14px; margin: 18px 0 4px; }
+  footer { margin-top: 24px; color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="../icons/passwordvault.svg" alt="">
+    <div>
+      <h1>Password Vault – Privacy policy</h1>
+      <p class="sub">Last updated 30 October 2026</p>
+    </div>
+  </header>
+
+  <div class="card">
+    <p class="short"><strong>In short:</strong> your passwords, notes and documents stay on your phone, encrypted. Password Vault works fully offline, has no account and no server, and Digital Beaver doesn't collect, see or sell anything.</p>
+
+    <h2>What the app stores</h2>
+    <p>Password Vault keeps what you add (logins, PINs, 2FA codes, notes, cards, documents and files) in the app's private storage on your phone. Every record is encrypted on its own (AES-256-GCM), and the database file is encrypted again with a key kept by Android's secure key store. Other apps can't read it, and Android's cloud backup is turned off for this app.</p>
+
+    <h2>Unlocking</h2>
+    <ul>
+      <li><strong>Master password:</strong> Password Vault never stores it. It is used, on your phone, to open the key that unlocks your vault. If you forget it and have no backup, nobody can open the vault, including Digital Beaver.</li>
+      <li><strong>Phone lock only:</strong> if you choose this at setup, the vault opens with your fingerprint, face or phone PIN through Android.</li>
+      <li>Fingerprint and face unlock are handled by Android. Password Vault never sees your fingerprint or face.</li>
+      <li>The app locks itself after a few minutes away (you choose how long) and blocks screenshots.</li>
+    </ul>
+
+    <h2>Autofill (optional)</h2>
+    <p>If you choose Password Vault as your phone's autofill service, Android tells it when another app or website shows a sign-in form, so it can offer your saved login there. Password Vault looks only at the form's fields and the app's or website's name, on your phone. It fills a login only after you unlock and pick one, and it asks before saving a password you typed. Once a password is filled into another app, that app has it. You can turn autofill off any time in Android's settings.</p>
+
+    <h2>Clipboard</h2>
+    <p>When you copy a password, Password Vault marks it as sensitive, so Android hides it in clipboard previews, and clears it after 30 seconds by default. Keyboard or clipboard apps that keep their own history may still keep a copy.</p>
+
+    <h2>Backups</h2>
+    <ul>
+      <li>A backup is a file encrypted with a backup password you choose. Without that password it can't be opened, by anyone, including Digital Beaver.</li>
+      <li>You decide where to save it. Password Vault doesn't upload backups anywhere.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>Password Vault shares something only when you tap Share, and only with the app or person you pick. Shared items are encrypted. The key is either inside the link itself (after the <code>#</code>, a part browsers don't send to any server) or a separate sharing password that you give the other person yourself.</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. Password Vault has no accounts, no ads, no analytics, no crash reporting and no tracking, and makes no network requests of its own. Logos are built into the app; it doesn't fetch website icons.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong>: only to scan QR codes, such as a 2FA setup code or a share. Nothing from the camera is saved.</li>
+      <li><strong>Fingerprint / face</strong>: only to unlock the vault when you choose it.</li>
+      <li><strong>Internet</strong>: Android needs it to run the app's built-in screens. Password Vault doesn't send your data anywhere.</li>
+      <li><strong>Autofill service</strong>: only if you turn it on, as described above.</li>
+    </ul>
+
+    <h2>Deleting your data</h2>
+    <p>Delete an item in the app, or uninstall Password Vault to remove everything on the phone. Backup and share files you saved yourself are deleted where you stored them.</p>
+
+    <h2>Children</h2>
+    <p>Password Vault is a general-audience app and doesn't knowingly collect anything from anyone, including children.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+    <h2>Contact</h2>
+    <p>Digital Beaver TZ, Arusha, Tanzania · <a href="mailto:stevenbody1424@gmail.com">stevenbody1424@gmail.com</a></p>
+  </div>
+
+  <footer><a href="../">Digital Beaver Apps</a></footer>
+</div>
+</body>
+</html>

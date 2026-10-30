@@ -271,6 +271,36 @@
           ]
         }
       ]
+    },
+    {
+      "id": "passwordvault",
+      "name": "Password Vault",
+      "icon": "icons/passwordvault.svg",
+      "color": "#2F5BEA",
+      "tagline": "An offline, encrypted password manager for personal and work logins: fills passwords in other apps, keeps 2FA codes, PINs, notes and documents in collections, and warns you about weak, reused or old passwords.",
+      "package": "com.digitalbeavertz.passwordvault",
+      "minAndroid": "7.0",
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/passwordvault/privacy.html"
+        }
+      ],
+      "releases": [
+        {
+          "version": "1.1.0",
+          "date": "2026-10-30",
+          "tag": "passwordvault-v1.1.0",
+          "file": "PasswordVault-v1.1.0.apk",
+          "size": 10847319,
+          "notes": [
+            "Autofill: Password Vault offers your saved login when you tap a sign-in box in other apps and in Chrome, and asks to save or update a password after you sign in.",
+            "Old-password reminders on Home, on each login and on the Security page, such as \"Facebook password is 2 years old\". Choose 6 months, 1 year, 2 years or never.",
+            "Fixed: after the app locked itself in the background, the fingerprint prompt didn't appear when you came back.",
+            "Permanent signing key, so future updates install over this version."
+          ]
+        }
+      ]
     }
   ]
 }
