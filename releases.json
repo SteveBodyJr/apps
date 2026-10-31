@@ -11,6 +11,18 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.6.0",
+          "date": "2026-10-31",
+          "tag": "until-v1.6.0",
+          "file": "Until-v1.6.0.apk",
+          "size": 3947570,
+          "notes": [
+            "Day, week, month and year trackers: see how much of each is left, and they start again by themselves until you stop them",
+            "Live home-screen widget for each tracker, with a clock that ticks every second",
+            "Widgets now refresh reliably at midnight"
+          ]
+        },
+        {
           "version": "1.5.1",
           "date": "2026-10-28",
           "tag": "until-v1.5.1",
