@@ -357,7 +357,7 @@
     },
     {
       "id": "bukhari",
-      "name": "Hadithi za Bukhari",
+      "name": "Sahih Al Bukhari",
       "group": "deen",
       "icon": "icons/bukhari.svg",
       "color": "#1E9A45",
@@ -424,7 +424,7 @@
           "file": "RuqyaShariyya-v1.5.0.apk",
           "size": 3806386,
           "notes": [
-            "New Deen page: Digital Beaver's Islamic apps in one place, with Hadithi za Bukhari",
+            "New Deen page: Digital Beaver's Islamic apps in one place, with Sahih Al Bukhari",
             "Guided self-ruqya, the evil eye and envy, morning and evening adhkar with their virtues, the 99 names of Allah"
           ]
         }

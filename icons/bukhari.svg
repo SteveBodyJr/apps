@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="144" height="144">
-  <!-- Hadithi za Bukhari launcher icon (res/drawable/ic_launcher_foreground.xml on #0F6B37). -->
+  <!-- Sahih Al Bukhari launcher icon (res/drawable/ic_launcher_foreground.xml on #0F6B37). -->
   <rect x="18" y="18" width="72" height="72" fill="#0F6B37"/>
-  <path fill="#FFFFFF" d="M52,48C45,44.5 38,43.6 31,45L31,72C38,70.6 45,71.5 52,75Z"/>
-  <path fill="#FFFFFF" d="M56,48C63,44.5 70,43.6 77,45L77,72C70,70.6 63,71.5 56,75Z"/>
-  <path fill="#D4A72C" d="M52.6,48.4L55.4,48.4L55.4,75.4L52.6,75.4Z"/>
-  <path fill="#9FD3B0" d="M36,53.2L47,55.6L47,57.2L36,54.8ZM36,58.6L47,61L47,62.6L36,60.2ZM61,55.6L72,53.2L72,54.8L61,57.2ZM61,61L72,58.6L72,60.2L61,62.6Z"/>
-  <path fill="#D4A72C" d="M54,27L56.3,32.4L61.8,30.2L59.6,35.7L65,38L59.6,40.3L61.8,45.8L56.3,43.6L54,49L51.7,43.6L46.2,45.8L48.4,40.3L43,38L48.4,35.7L46.2,30.2L51.7,32.4Z"/>
+  <path fill="#FFFFFF" d="M41,26h30a2,2 0 0 1 2,2v52a2,2 0 0 1 -2,2h-30a6,6 0 0 1 -6,-6v-44a6,6 0 0 1 6,-6z"/>
+  <path fill="#9FD3B0" d="M41,26h3.5v56h-3.5a6,6 0 0 1 -6,-6v-44a6,6 0 0 1 6,-6z"/>
+  <path fill="#D4A72C" d="M58,26h9v27l-4.5,-4.5l-4.5,4.5z"/>
 </svg>
