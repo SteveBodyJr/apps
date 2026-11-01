@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="144" height="144">
+  <!-- Jifunze Quran launcher icon (res/drawable/ic_launcher_foreground.xml on #1689DA). -->
+  <rect x="18" y="18" width="72" height="72" fill="#1689DA"/>
+  <path fill="#FFFFFF" d="M52,52C45,48.5 38,47.6 31,49L31,76C38,74.6 45,75.5 52,79Z"/>
+  <path fill="#FFFFFF" d="M56,52C63,48.5 70,47.6 77,49L77,76C70,74.6 63,75.5 56,79Z"/>
+  <path fill="#0E6DB8" d="M52.6,52.4L55.4,52.4L55.4,79.4L52.6,79.4Z"/>
+  <path fill="#9FD0F2" d="M36,57.2L47,59.6L47,61.2L36,58.8Z"/>
+  <path fill="#9FD0F2" d="M36,62.6L47,65L47,66.6L36,64.2Z"/>
+  <path fill="#9FD0F2" d="M61,59.6L72,57.2L72,58.8L61,61.2Z"/>
+  <path fill="#9FD0F2" d="M61,65L72,62.6L72,64.2L61,66.6Z"/>
+  <path fill="#FFFFFF" d="M45,36.5a2,2 0 0 1,4 0v6a2,2 0 0 1,-4 0z"/>
+  <path fill="#FFFFFF" d="M52,29.5a2,2 0 0 1,4 0v13a2,2 0 0 1,-4 0z"/>
+  <path fill="#FFFFFF" d="M59,34.5a2,2 0 0 1,4 0v8a2,2 0 0 1,-4 0z"/>
+</svg>
