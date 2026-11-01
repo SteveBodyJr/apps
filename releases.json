@@ -450,6 +450,42 @@
           ]
         }
       ]
+    },
+    {
+      "id": "jifunze",
+      "name": "Jifunze Quran",
+      "group": "deen",
+      "icon": "icons/jifunze.svg",
+      "color": "#1689DA",
+      "tagline": "Learn to read the Qur'an with the Qaida Nuraniyya in Kiswahili: 17 lessons from letters to full ayat, Sheikh al-Husary reading the words and ayat, and Juz 'Amma where you tap any word to hear it. Teachers can record every letter for their students.",
+      "taglineSw": "Jifunze kusoma Quran kwa Qaida Nuraniyya kwa Kiswahili: masomo 17 kutoka herufi hadi aya kamili, Sheikh al-Husary akisoma maneno na aya, na Juzuu Amma ambapo unagusa neno lolote ukasikia likisomwa. Walimu wanaweza kurekodi kila herufi kwa ajili ya wanafunzi wao.",
+      "package": "com.digitalbeavertz.jifunzequran",
+      "minAndroid": "8.0",
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/jifunze/privacy.html"
+        },
+        {
+          "label": "Deen",
+          "url": "https://stevebodyjr.github.io/apps/deen/"
+        }
+      ],
+      "releases": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-01",
+          "tag": "jifunze-v1.1.0",
+          "file": "JifunzeQuran-v1.1.0.apk",
+          "size": 4528603,
+          "notes": [
+            "Qaida Nuraniyya in Kiswahili: 17 lessons from single letters to reading full ayat, with explanations.",
+            "Sheikh al-Husary reads the huruf muqatta'at, 115 practice words and the ayat of lesson 17.",
+            "Juz 'Amma: tap any word to hear it; while an ayah plays, the word being read lights up. Audio downloads once and works offline.",
+            "Teacher mode: record each letter and syllable once, then send the sound pack to students."
+          ]
+        }
+      ]
     }
   ]
 }
