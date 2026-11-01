@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DukaPOS · Download the app</title>
+<meta name="description" content="DukaPOS for Android: sell, track stock, customers, debts and reports from your phone, even offline. Pakua programu ya DukaPOS.">
+<meta name="theme-color" content="#047857">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icons/dukapos.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* The look of the DukaPOS app: deep emerald, white, hairline borders. Flat colours. */
+  :root {
+    --brand: #047857; --brand-ink: #065F46; --soft-brand: #E3F4EC; --amber: #F59E0B;
+    --canvas: #F3F5F4; --card: #FFFFFF; --soft: #EEF2F0; --ink: #0F1A16; --muted: #5F6B66; --line: #E1E7E3;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brand: #10B981; --brand-ink: #34D399; --soft-brand: #0F2E24;
+      --canvas: #0B0F0E; --card: #141A18; --soft: #1B2320; --ink: #EAF1EC; --muted: #93A198; --line: #26312B;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--canvas); color: var(--ink); font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.55; }
+  a { color: inherit; }
+
+  .hero { background: #047857; color: #fff; padding: 22px 16px 64px; }
+  .hero-in { max-width: 760px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 16px; margin-top: 10px; }
+  .brand img { width: 72px; height: 72px; border-radius: 20px; border: 2px solid rgba(255,255,255,.35); flex: none; }
+  .hero h1 { margin: 0; font-size: 40px; line-height: 1.05; font-weight: 800; letter-spacing: -1px; }
+  .hero p { margin: 6px 0 0; color: rgba(255,255,255,.85); font-size: 15px; }
+
+  .wrap { max-width: 760px; margin: -36px auto 0; padding: 0 16px calc(40px + env(safe-area-inset-bottom)); }
+  .label { margin: 26px 4px 10px; font-size: 12px; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; color: var(--muted); }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: 20px; }
+  .meta { margin: 0; color: var(--muted); font-size: 13px; }
+  .meta span { white-space: nowrap; }
+  .tagline { margin: 10px 0 16px; }
+  .sw { color: var(--muted); font-size: 14px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 52px; padding: 0 22px; border-radius: 999px; border: 0; font: inherit; font-weight: 700; font-size: 16px; text-decoration: none; cursor: pointer; }
+  .btn.primary { background: var(--brand); color: #fff; flex: 1 1 auto; }
+  .btn.ghost { background: var(--soft); color: var(--ink); width: 52px; padding: 0; flex: none; }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+  .actions { display: flex; gap: 10px; }
+  .app h4 { margin: 20px 0 6px; font-size: 15px; font-weight: 700; }
+  .app ul { margin: 0; padding-left: 20px; }
+  .app li { margin: 4px 0; }
+  .notice { margin-top: 14px; background: #FEF3C7; color: #78350F; border-radius: 16px; padding: 12px 14px; font-size: 14px; }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+  .feature { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
+  .feature .ic { width: 38px; height: 38px; border-radius: 12px; background: var(--soft-brand); color: var(--brand-ink); display: grid; place-items: center; flex: none; }
+  .feature .ic svg { width: 20px; height: 20px; }
+  .feature strong { display: block; font-size: 15px; line-height: 1.3; }
+  .feature span { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 16px 20px; }
+  .card ol { margin: 6px 0 4px; padding-left: 22px; }
+  .card li { margin: 6px 0; }
+  .card p { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
+  .account { background: var(--soft-brand); color: var(--brand-ink); border-radius: 22px; padding: 16px 18px; font-size: 15px; }
+  .account .sw { color: inherit; opacity: .85; }
+  .state { text-align: center; color: var(--muted); padding: 30px 16px; background: var(--card); border: 1px solid var(--line); border-radius: 26px; margin: 0; }
+  footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--brand); font-weight: 600; }
+  .toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translateX(-50%); background: var(--ink); color: var(--canvas); padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+  :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <div class="brand">
+      <img src="../icons/dukapos.svg" alt="">
+      <div>
+        <h1>DukaPOS</h1>
+        <p>Your shop in your pocket<br><span style="opacity:.8">Duka lako mfukoni mwako</span></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <main id="main"><p class="state">Loading… · Inapakia…</p></main>
+
+  <p class="label">You need an account · Unahitaji akaunti</p>
+  <div class="account">
+    DukaPOS is for shops that use DukaPOS. Sign in with the username and password your shop owner gave you.
+    <div class="sw">Programu hii ni kwa maduka yanayotumia DukaPOS. Ingia kwa jina na nenosiri ulilopewa na mwenye duka.</div>
+  </div>
+
+  <p class="label">What you can do · Unachoweza kufanya</p>
+  <div class="features">
+    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M12 16v4M7 8h4"/></svg></div>
+      <div><strong>Sell, even offline</strong><span>Sales are saved on the phone and sent when the internet comes back. · Uza hata bila mtandao.</span></div></div>
+    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg></div>
+      <div><strong>Products and stock</strong><span>Add products, receive stock, scan barcodes, see what is running low. · Bidhaa na stoku.</span></div></div>
+    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4.5a3.5 3.5 0 010 7M18 14c2 .8 3 2.8 3 6"/></svg></div>
+      <div><strong>Customers and debts</strong><span>Who owes what, record payments, send statements on WhatsApp. · Wateja na madeni.</span></div></div>
+    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+      <div><strong>Reports</strong><span>Sales, profit and loss, items report, stock report. · Ripoti za mauzo na faida.</span></div></div>
+    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><circle cx="12" cy="12.5" r="2.5"/><path d="M6 6V4h12v2"/></svg></div>
+      <div><strong>Cash register and expenses</strong><span>Open and close the drawer, record what the shop spends. · Droo ya fedha na matumizi.</span></div></div>
+    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.5 5.7 3.5 9s-1 6.3-3.5 9c-2.5-2.7-3.5-5.7-3.5-9s1-6.3 3.5-9z"/></svg></div>
+      <div><strong>English and Kiswahili</strong><span>Every branch, every role, in your language. · Kiingereza na Kiswahili.</span></div></div>
+  </div>
+
+  <p class="label">Installing · Kusakinisha</p>
+  <div class="card">
+    <ol>
+      <li>Tap <strong>Download APK</strong> on this phone. <span class="sw">Gusa Pakua APK kwenye simu hii.</span></li>
+      <li>Open the downloaded file. <span class="sw">Fungua faili iliyopakuliwa.</span></li>
+      <li>If Android asks, allow your browser to install apps, then go back and tap Install. <span class="sw">Android ikiuliza, ruhusu kivinjari kusakinisha programu, kisha ugusa Install.</span></li>
+      <li>Updating? Install over the old version. Your account and unsent sales stay. <span class="sw">Unasasisha? Sakinisha juu ya toleo la zamani; mauzo yako yanabaki.</span></li>
+    </ol>
+    <p>DukaPOS isn't on Google Play yet, so Play Protect may ask you to confirm. · Bado haiko Google Play, kwa hiyo Play Protect inaweza kukuuliza uthibitishe.</p>
+  </div>
+
+  <footer>
+    <p><a href="https://dukapos.co.tz" rel="noopener">dukapos.co.tz</a></p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+  const ID = "dukapos";
+  const DOWNLOAD = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>';
+  const SHARE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>';
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const fmtDate = (iso) => { const d = new Date(iso + "T12:00:00"); return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
+  const fmtSize = (b) => b ? (b / 1048576).toFixed(1) + " MB" : "";
+  const url = (repo, r) => r.tag && r.file ? `https://github.com/${repo}/releases/download/${encodeURIComponent(r.tag)}/${encodeURIComponent(r.file)}` : null;
+
+  function toast(t) {
+    const el = document.getElementById("toast");
+    el.textContent = t; el.classList.add("show");
+    clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("show"), 2200);
+  }
+
+  async function share(app) {
+    const link = location.href.split("#")[0];
+    try {
+      if (navigator.share) { await navigator.share({ title: app.name, text: app.tagline, url: link }); return; }
+      await navigator.clipboard.writeText(link); toast("Link copied · Kiungo kimenakiliwa");
+    } catch (e) { /* cancelled */ }
+  }
+
+  function render(data) {
+    const app = data.apps.find((a) => a.id === ID);
+    const main = document.getElementById("main");
+    const r = app && app.releases && (app.releases.find((x) => url(data.repo, x)) || app.releases[0]);
+    if (!r) { main.innerHTML = '<p class="state">Coming soon · Inakuja hivi karibuni</p>'; return; }
+    const dl = url(data.repo, r);
+    const meta = [`Version ${r.version}`, fmtDate(r.date), fmtSize(r.size), app.minAndroid ? `Android ${app.minAndroid}+` : ""].filter(Boolean);
+    main.innerHTML = `<article class="app">
+      <p class="meta">${meta.map((m) => `<span>${esc(m)}</span>`).join(" · ")}</p>
+      <p class="tagline">${esc(app.tagline)}${app.taglineSw ? `<br><span class="sw">${esc(app.taglineSw)}</span>` : ""}</p>
+      <div class="actions">
+        ${dl ? `<a class="btn primary" href="${esc(dl)}" download>${DOWNLOAD} Download APK</a>` : '<span class="meta">Coming soon</span>'}
+        <button class="btn ghost" id="share" aria-label="Share this page" title="Share · Shiriki">${SHARE}</button>
+      </div>
+      ${r.important ? `<div class="notice"><strong>Before you update:</strong> ${esc(r.important)}</div>` : ""}
+      <h4>What's new in ${esc(r.version)} · Mapya</h4>
+      <ul>${r.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>
+    </article>`;
+    document.getElementById("share").addEventListener("click", () => share(app));
+  }
+
+  fetch("../releases.json", { cache: "no-cache" })
+    .then((r) => r.json())
+    .then(render)
+    .catch(() => { document.getElementById("main").innerHTML = '<p class="state">Could not load. Try again. · Imeshindwa kupakia.</p>'; });
+
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("../sw.js", { scope: "../" }).catch(() => {});
+})();
+</script>
+</body>
+</html>

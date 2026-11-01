@@ -16,6 +16,16 @@ This uploads the APK as a release of this repo, adds it to `releases.json`, comm
 App ids: `until`, `hdstatus`, `futureme`, `folio`, `passwordvault`, `mylibrary`. A new app needs an entry in `releases.json` first
 (id, name, icon in `icons/`, tagline, package, minAndroid).
 
+## Apps with their own page
+
+An app with a `"group"` in `releases.json` is **not** listed on the main page; it shows only on its
+group's own page, and the main page carries no link to it:
+
+| Group | Page | Apps |
+| --- | --- | --- |
+| `deen` | `deen/` | bukhari, ruqya, jifunze |
+| `dukapos` | `dukapos/` (https://stevebodyjr.github.io/apps/dukapos/) | dukapos |
+
 ## Files
 
 | File | What |

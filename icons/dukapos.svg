@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="144" height="144">
+  <!-- DukaPOS launcher icon (assets/icon/dukapos_icon.png), flat: deep emerald, white shop front. -->
+  <rect width="1024" height="1024" fill="#047857"/>
+  <path d="M284 322 H741 Q757 322 757 338 V424 Q757 462 727 470 V710 Q727 726 711 726 H314 Q298 726 298 710 V470 Q268 462 268 424 V338 Q268 322 284 322 Z" fill="#FFFFFF"/>
+  <path d="M355 452 L365 428 L375 452 Z M453 452 L463 428 L473 452 Z M550 452 L560 428 L570 452 Z M648 452 L658 428 L668 452 Z" fill="#047857"/>
+  <rect x="332" y="499" width="93" height="68" rx="14" fill="#047857"/>
+  <rect x="600" y="499" width="93" height="68" rx="14" fill="#047857"/>
+  <rect x="446" y="559" width="133" height="148" rx="22" fill="#047857"/>
+  <circle cx="552" cy="656" r="8" fill="#FFFFFF"/>
+</svg>

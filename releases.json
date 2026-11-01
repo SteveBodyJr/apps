@@ -498,6 +498,18 @@
           ]
         }
       ]
+    },
+    {
+      "id": "dukapos",
+      "name": "DukaPOS",
+      "group": "dukapos",
+      "icon": "icons/dukapos.svg",
+      "color": "#047857",
+      "tagline": "Run your shop from your phone: sell even when offline, track stock, customers and debts, and see sales, profit and items reports.",
+      "taglineSw": "Endesha duka lako kwa simu: uza hata bila mtandao, fuatilia stoku, wateja na madeni, na uone ripoti za mauzo, faida na bidhaa.",
+      "package": "tz.co.dukapos.app",
+      "minAndroid": "7.0",
+      "releases": []
     }
   ]
 }
