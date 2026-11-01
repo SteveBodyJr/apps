@@ -377,6 +377,17 @@
       ],
       "releases": [
         {
+          "version": "1.1.1",
+          "date": "2026-11-01",
+          "tag": "bukhari-v1.1.1",
+          "file": "SahihAlBukhari-v1.1.1.apk",
+          "size": 5759821,
+          "notes": [
+            "New name: Sahih Al Bukhari (was Hadithi za Bukhari)",
+            "New, simpler icon"
+          ]
+        },
+        {
           "version": "1.1.0",
           "date": "2026-11-01",
           "tag": "bukhari-v1.1.0",
@@ -417,6 +428,16 @@
         }
       ],
       "releases": [
+        {
+          "version": "1.5.1",
+          "date": "2026-11-01",
+          "tag": "ruqya-v1.5.1",
+          "file": "RuqyaShariyya-v1.5.1.apk",
+          "size": 3806142,
+          "notes": [
+            "The Deen page shows Sahih Al Bukhari under its new name and icon"
+          ]
+        },
         {
           "version": "1.5.0",
           "date": "2026-11-01",
