@@ -473,6 +473,18 @@
       ],
       "releases": [
         {
+          "version": "1.2.0",
+          "date": "2026-11-01",
+          "tag": "jifunze-v1.2.0",
+          "file": "JifunzeQuran-v1.2.0.apk",
+          "size": 4545935,
+          "notes": [
+            "New: Andika (write). Practise writing every letter with your finger or a pen: trace over the faint letter, or write it alone, and the app checks your writing and gives up to 3 stars.",
+            "New: daily reminder \"Somo la leo\" at the time you choose. It names your next lesson and opens it when you tap.",
+            "Juz 'Amma, Husary reading words and the 17 lessons from 1.1.0 are all included."
+          ]
+        },
+        {
           "version": "1.1.0",
           "date": "2026-11-01",
           "tag": "jifunze-v1.1.0",
