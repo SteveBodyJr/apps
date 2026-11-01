@@ -509,7 +509,21 @@
       "taglineSw": "Endesha duka lako kwa simu: uza hata bila mtandao, fuatilia stoku, wateja na madeni, na uone ripoti za mauzo, faida na bidhaa.",
       "package": "tz.co.dukapos.app",
       "minAndroid": "7.0",
-      "releases": []
+      "releases": [
+        {
+          "version": "1.8.0",
+          "date": "2026-11-01",
+          "tag": "dukapos-v1.8.0",
+          "file": "DukaPOS-1.8.0.apk",
+          "size": 39889635,
+          "notes": [
+            "Items report: see what sold, what it cost and the profit on every product, by item or sale by sale",
+            "Send customers their statement on WhatsApp",
+            "Type the quantity straight into a sale",
+            "Sign-in token kept in the phone's secure storage"
+          ]
+        }
+      ]
     }
   ]
 }
