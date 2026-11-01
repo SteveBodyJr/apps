@@ -375,7 +375,22 @@
           "url": "https://stevebodyjr.github.io/apps/deen/"
         }
       ],
-      "releases": []
+      "releases": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-01",
+          "tag": "bukhari-v1.1.0",
+          "file": "HadithiBukhari-v1.1.0.apk",
+          "size": 5759697,
+          "notes": [
+            "458 Swahili hadiths from HadeethEnc, unchanged, each with its meaning and lessons",
+            "The whole of Sahih al-Bukhari in Arabic (7,579 narrations), checked letter by letter and vowel by vowel against sunnah.com",
+            "Bukhari numbers only where verified; the printed-edition number is shown too when it differs",
+            "Today's hadith, reminder and home-screen widget; works offline, no ads",
+            "New Deen page linking to the other Islamic apps"
+          ]
+        }
+      ]
     },
     {
       "id": "ruqya",
@@ -401,7 +416,19 @@
           "url": "https://stevebodyjr.github.io/apps/deen/"
         }
       ],
-      "releases": []
+      "releases": [
+        {
+          "version": "1.5.0",
+          "date": "2026-11-01",
+          "tag": "ruqya-v1.5.0",
+          "file": "RuqyaShariyya-v1.5.0.apk",
+          "size": 3806386,
+          "notes": [
+            "New Deen page: Digital Beaver's Islamic apps in one place, with Hadithi za Bukhari",
+            "Guided self-ruqya, the evil eye and envy, morning and evening adhkar with their virtues, the 99 names of Allah"
+          ]
+        }
+      ]
     }
   ]
 }
