@@ -1,7 +1,7 @@
 // Offline support for Digital Beaver Apps.
 // The page and icons come from the cache first; releases.json from the network first,
 // so a new version shows up as soon as you're online. APK downloads are never cached.
-const CACHE = "dba-v8";
+const CACHE = "dba-v9";
 const SHELL = [
   "./",
   "index.html",
@@ -16,6 +16,10 @@ const SHELL = [
   "icons/folio.svg",
   "icons/passwordvault.svg",
   "icons/mylibrary.svg",
+  "icons/bukhari.svg",
+  "icons/ruqya.svg",
+  "deen/",
+  "deen/index.html",
 ];
 
 self.addEventListener("install", (event) => {

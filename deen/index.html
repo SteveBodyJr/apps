@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="sw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deen · Digital Beaver Apps</title>
+<meta name="description" content="Deen: programu za Kiislamu za Digital Beaver. Hadithi za Bukhari, Ruqya Shariyya na zinazokuja. Islamic apps by Digital Beaver: Qur'an and authentic Sunnah only, no ads.">
+<meta name="theme-color" content="#0F6B37">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icons/ruqya.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* The look of Ruqya Shariyya and Hadithi za Bukhari: white, vivid green, deep green header, gold ornaments. Flat colours. */
+  :root {
+    --green: #1E9A45; --header: #0F6B37; --mint: #DDF1E3; --on-mint: #12632F; --gold: #D4A72C;
+    --canvas: #FFFFFF; --card: #FFFFFF; --soft: #F2F5F3; --ink: #16201A; --muted: #6A746E; --line: #E1E7E3;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --green: #34B05A; --header: #0D4425; --mint: #183424; --on-mint: #B5E3C3; --gold: #E2BE5A;
+      --canvas: #0C1210; --card: #141C18; --soft: #1C2621; --ink: #EAF1EC; --muted: #93A198; --line: #26312B;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--canvas); color: var(--ink); font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 16px; line-height: 1.55; }
+  a { color: inherit; }
+
+  /* Green arch header */
+  .hero { position: relative; background: var(--header); color: #fff; padding: 22px 16px 70px; overflow: hidden; }
+  .hero .arch { position: absolute; inset: auto 0 0 0; width: 100%; height: 100%; pointer-events: none; }
+  .hero-in { position: relative; max-width: 760px; margin: 0 auto; }
+  .back { display: inline-flex; align-items: center; gap: 6px; color: #fff; opacity: .85; text-decoration: none; font-size: 14px; font-weight: 600; }
+  .hero h1 { margin: 34px 0 0; text-align: center; font-size: 46px; line-height: 1.05; font-weight: 800; letter-spacing: -1px; }
+  .hero .ar { text-align: center; color: var(--gold); font-size: 22px; margin-top: 6px; font-family: "Amiri", "Scheherazade New", serif; }
+  .hero p { text-align: center; margin: 8px auto 0; max-width: 520px; color: rgba(255,255,255,.82); font-size: 15px; }
+
+  .wrap { max-width: 760px; margin: -34px auto 0; padding: 0 16px calc(40px + env(safe-area-inset-bottom)); position: relative; }
+  .rule { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 16px 18px; font-size: 15px; }
+  .rule strong { color: var(--green); }
+  .label { margin: 26px 4px 10px; font-size: 12px; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; color: var(--muted); }
+
+  .apps { display: grid; gap: 14px; }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: 20px; scroll-margin-top: 16px; }
+  .app-head { display: flex; align-items: center; gap: 16px; }
+  .app-head img { width: 64px; height: 64px; border-radius: 18px; flex: none; }
+  .app h3 { margin: 0; font-size: 21px; line-height: 1.2; font-weight: 800; letter-spacing: -.3px; }
+  .meta { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  .meta span { white-space: nowrap; }
+  .tagline { margin: 14px 0 16px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 50px; padding: 0 22px; border-radius: 999px; border: 0; font: inherit; font-weight: 700; font-size: 15px; text-decoration: none; cursor: pointer; }
+  .btn.primary { background: var(--green); color: #fff; flex: 1 1 auto; }
+  .btn.ghost { background: var(--soft); color: var(--ink); width: 50px; padding: 0; flex: none; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .actions { display: flex; gap: 10px; }
+  .app h4 { margin: 20px 0 6px; font-size: 15px; font-weight: 700; }
+  .app ul { margin: 0; padding-left: 20px; }
+  .app li { margin: 4px 0; }
+  .links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+  .links a { color: var(--muted); }
+  .soon { background: var(--mint); color: var(--on-mint); border-radius: 22px; padding: 16px 18px; font-size: 15px; }
+  .card { background: var(--soft); border-radius: 22px; padding: 16px 20px; }
+  .card ol { margin: 10px 0 4px; padding-left: 22px; }
+  .card li { margin: 6px 0; }
+  .card p { margin: 10px 0 0; color: var(--muted); font-size: 14px; }
+  .en { color: var(--muted); font-size: 14px; }
+  .state { text-align: center; color: var(--muted); padding: 30px 16px; }
+  footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--green); font-weight: 600; }
+  .toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translateX(-50%); background: var(--ink); color: var(--canvas); padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <!-- The gold mosque arch of the apps' Home header. -->
+  <svg class="arch" viewBox="0 0 400 260" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 214 L52 214 C44 150 120 92 200 62 C280 92 356 150 348 214 L400 214" fill="none" stroke="#D4A72C" stroke-width="2" vector-effect="non-scaling-stroke"/>
+  </svg>
+  <div class="hero-in">
+    <a class="back" href="../">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      Digital Beaver Apps
+    </a>
+    <h1>Deen</h1>
+    <div class="ar" lang="ar">الدِّين</div>
+    <p>Programu za Kiislamu za Digital Beaver<br><span style="opacity:.8">Islamic apps by Digital Beaver</span></p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="rule">
+    <strong>Kanuni moja:</strong> Qur'ani na Sunna sahihi tu, maandishi kutoka vyanzo vinavyojulikana bila kubadilishwa, bila matangazo na bila kukusanya taarifa zako.
+    <div class="en">One rule: only the Qur'an and authentic Sunnah, text from known sources left unchanged, no ads and no data collected.</div>
+  </div>
+
+  <main id="main"><p class="state">Inapakia… · Loading…</p></main>
+
+  <p class="label">Zinakuja · Coming</p>
+  <div class="soon">Programu mpya za Deen zitaongezwa kwenye ukurasa huu, na ndani ya kila programu (Deen).<div class="en" style="color:inherit;opacity:.8">New Deen apps will appear on this page and inside each app.</div></div>
+
+  <p class="label">Kusakinisha · Installing</p>
+  <div class="card">
+    <ol>
+      <li>Gusa <strong>Pakua APK</strong> kwenye simu hii. <span class="en">Tap Download APK on this phone.</span></li>
+      <li>Fungua faili iliyopakuliwa. <span class="en">Open the downloaded file.</span></li>
+      <li>Android ikiuliza, ruhusu kivinjari kusakinisha programu, kisha urudi na ugusa Install. <span class="en">If Android asks, allow your browser to install apps, then tap Install.</span></li>
+      <li>Unasasisha? Sakinisha juu ya toleo la zamani; taarifa zako zinabaki. <span class="en">Updating? Install over the old version; your data stays.</span></li>
+    </ol>
+  </div>
+
+  <footer>
+    <p><a href="../">Digital Beaver Apps</a> · Digital Beaver TZ · Arusha, Tanzania</p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+  const DOWNLOAD = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>';
+  const SHARE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>';
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const months = ["Januari", "Februari", "Machi", "Aprili", "Mei", "Juni", "Julai", "Agosti", "Septemba", "Oktoba", "Novemba", "Desemba"];
+  const fmtDate = (iso) => { const d = new Date(iso + "T12:00:00"); return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
+  const fmtSize = (b) => b ? (b / 1048576).toFixed(1) + " MB" : "";
+  const url = (repo, r) => r.tag && r.file ? `https://github.com/${repo}/releases/download/${encodeURIComponent(r.tag)}/${encodeURIComponent(r.file)}` : null;
+  const icon = (p) => "../" + p;
+
+  function toast(t) {
+    const el = document.getElementById("toast");
+    el.textContent = t; el.classList.add("show");
+    clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove("show"), 2200);
+  }
+
+  async function share(app) {
+    const link = location.href.split("#")[0] + "#" + app.id;
+    try {
+      if (navigator.share) { await navigator.share({ title: app.name, text: app.taglineSw || app.tagline, url: link }); return; }
+      await navigator.clipboard.writeText(link); toast("Kiungo kimenakiliwa · Link copied");
+    } catch (e) { /* cancelled */ }
+  }
+
+  function render(data) {
+    // Deen apps are the ones marked "group": "deen" in releases.json: new ones show up here by themselves.
+    const apps = data.apps.filter((a) => a.group === "deen" && a.releases && a.releases.length);
+    const main = document.getElementById("main");
+    if (!apps.length) { main.innerHTML = '<p class="state">Hakuna programu bado · No apps yet</p>'; return; }
+    let html = '<p class="label">Programu · Apps</p><div class="apps">';
+    for (const app of apps) {
+      const r = app.releases.find((x) => url(data.repo, x)) || app.releases[0];
+      const dl = url(data.repo, r);
+      const meta = [`Toleo ${r.version}`, fmtDate(r.date), fmtSize(r.size), app.minAndroid ? `Android ${app.minAndroid}+` : ""].filter(Boolean);
+      html += `<article class="app" id="${esc(app.id)}">
+        <div class="app-head"><img src="${esc(icon(app.icon))}" alt="">
+          <div><h3>${esc(app.name)}</h3><p class="meta">${meta.map((m) => `<span>${esc(m)}</span>`).join(" · ")}</p></div></div>
+        <p class="tagline">${esc(app.taglineSw || app.tagline)}${app.taglineSw ? `<br><span class="en">${esc(app.tagline)}</span>` : ""}</p>
+        <div class="actions">
+          ${dl ? `<a class="btn primary" href="${esc(dl)}" download>${DOWNLOAD} Pakua APK</a>` : '<span class="meta">Inakuja hivi karibuni · Coming soon</span>'}
+          <button class="btn ghost" data-share="${esc(app.id)}" aria-label="Shiriki ${esc(app.name)}" title="Shiriki · Share">${SHARE}</button>
+        </div>
+        <h4>Mapya katika ${esc(r.version)} · What's new</h4>
+        <ul>${r.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>
+        ${app.links && app.links.length ? `<div class="links">${app.links.map((l) => `<a href="${esc(l.url)}" rel="noopener">${esc(l.label)}</a>`).join("")}</div>` : ""}
+      </article>`;
+    }
+    main.innerHTML = html + "</div>";
+    main.querySelectorAll("[data-share]").forEach((b) => b.addEventListener("click", () => share(apps.find((a) => a.id === b.dataset.share))));
+    if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
+  }
+
+  fetch("../releases.json", { cache: "no-cache" })
+    .then((r) => r.json())
+    .then(render)
+    .catch(() => { document.getElementById("main").innerHTML = '<p class="state">Imeshindwa kupakia. Jaribu tena. · Could not load. Try again.</p>'; });
+
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("../sw.js", { scope: "../" }).catch(() => {});
+})();
+</script>
+</body>
+</html>

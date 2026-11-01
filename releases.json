@@ -354,6 +354,54 @@
           ]
         }
       ]
+    },
+    {
+      "id": "bukhari",
+      "name": "Hadithi za Bukhari",
+      "group": "deen",
+      "icon": "icons/bukhari.svg",
+      "color": "#1E9A45",
+      "tagline": "Sahih al-Bukhari hadiths in Kiswahili with their meaning and lessons, and the whole of Sahih al-Bukhari in Arabic, checked word for word against sunnah.com. Offline, no ads.",
+      "taglineSw": "Hadithi za Sahih al-Bukhari kwa Kiswahili, pamoja na maana na mafunzo yake, na Sahih al-Bukhari yote kwa Kiarabu iliyohakikiwa neno kwa neno. Haihitaji intaneti, bila matangazo.",
+      "package": "com.digitalbeavertz.bukhari",
+      "minAndroid": "8.0",
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/bukhari/privacy.html"
+        },
+        {
+          "label": "Deen",
+          "url": "https://stevebodyjr.github.io/apps/deen/"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "id": "ruqya",
+      "name": "Ruqya Shariyya",
+      "group": "deen",
+      "icon": "icons/ruqya.svg",
+      "color": "#1E9A45",
+      "tagline": "Self-ruqya from the Qur'an and authentic Sunnah: guided sessions for the evil eye and envy, morning and evening adhkar with their virtues, the 99 names of Allah, and Mishary Alafasy's recitation. English and Kiswahili.",
+      "taglineSw": "Ruqya ya kisheria kutoka Qur'ani na Sunna sahihi: kujitibu, kijicho na husda, adhkar za asubuhi na jioni pamoja na fadhila zake, majina 99 ya Allah, na kisomo cha Mishary Alafasy. Kiswahili na Kiingereza.",
+      "package": "com.digitalbeavertz.ruqya",
+      "minAndroid": "8.0",
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/ruqya/privacy.html"
+        },
+        {
+          "label": "Source code",
+          "url": "https://github.com/SteveBodyJr/ruqya-shariyya"
+        },
+        {
+          "label": "Deen",
+          "url": "https://stevebodyjr.github.io/apps/deen/"
+        }
+      ],
+      "releases": []
     }
   ]
 }

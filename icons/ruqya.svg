@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="144" height="144">
+  <!-- Ruqya Shariyya launcher icon (res/drawable/ic_launcher_foreground.xml on #0F6B37). -->
+  <rect x="18" y="18" width="72" height="72" fill="#0F6B37"/>
+  <g transform="translate(24 24) scale(2.5)" fill="#FFFFFF">
+    <path d="M11.2,7C8.4,5.6 5.8,5.4 3.2,6.2L3.2,18.4C5.8,17.6 8.4,17.8 11.2,19.2Z"/>
+    <path d="M12.8,7C15.6,5.6 18.2,5.4 20.8,6.2L20.8,18.4C18.2,17.6 15.6,17.8 12.8,19.2Z"/>
+    <path d="M12,2.2L12.7,3.8L14.4,3.9L13.1,5L13.5,6.6L12,5.7L10.5,6.6L10.9,5L9.6,3.9L11.3,3.8Z"/>
+  </g>
+</svg>

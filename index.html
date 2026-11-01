@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Digital Beaver Apps</title>
-<meta name="description" content="The latest versions of Digital Beaver's Android apps: Until, Ultimate HD WA Status, Future Me, Folio, Password Vault and My Library. Download the APK and see what's new.">
+<meta name="description" content="The latest versions of Digital Beaver's Android apps: Until, Ultimate HD WA Status, Future Me, Folio, Password Vault, My Library, and the Deen apps Hadithi za Bukhari and Ruqya Shariyya. Download the APK and see what's new.">
 <meta name="theme-color" content="#F4F4F7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0B0B0F" media="(prefers-color-scheme: dark)">
 <link rel="manifest" href="manifest.webmanifest">
@@ -138,6 +138,13 @@
   }
   .toast.show { opacity: 1; }
   :focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+  /* Deen: the Islamic apps get their own page */
+  .deen { display: flex; align-items: center; gap: 14px; padding: 14px 18px; margin: 0 0 6px; border-radius: 24px; background: #0F6B37; color: #fff; text-decoration: none; }
+  .deen svg { width: 34px; height: 34px; flex: none; }
+  .deen svg.go { width: 22px; height: 22px; }
+  .deen .grow { flex: 1; min-width: 0; }
+  .deen strong { display: block; font-size: 18px; font-weight: 800; }
+  .deen span span { display: block; font-size: 13px; opacity: .8; }
 </style>
 </head>
 <body>
@@ -153,6 +160,12 @@
       <span class="txt">Install</span>
     </button>
   </header>
+
+  <a class="deen" href="deen/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#D4A72C" d="M12 2.5l1.2 2.8 3-1.1-1.1 3 2.8 1.2-2.8 1.2 1.1 3-3-1.1L12 14.3l-1.2-2.8-3 1.1 1.1-3L6.1 8.4l2.8-1.2-1.1-3 3 1.1z"/><path fill="none" stroke="#fff" stroke-width="1.8" d="M4 21v-5.5C4 12 8 10.5 12 8c4 2.5 8 4 8 7.5V21z"/></svg>
+    <span class="grow"><strong>Deen</strong><span>Islamic apps · Programu za Kiislamu</span></span>
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="go"><path fill="none" stroke="#D4A72C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+  </a>
 
   <main id="main">
     <p class="state" id="state">Loading releases…</p>
