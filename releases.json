@@ -369,7 +369,22 @@
           "url": "https://stevebodyjr.github.io/apps/beaverfinance/privacy.html"
         }
       ],
-      "releases": []
+      "releases": [
+        {
+          "version": "1.4.1",
+          "date": "2026-11-07",
+          "tag": "beaverfinance-v1.4.1",
+          "file": "Beaver-Finance-v1.4.1-universal.apk",
+          "size": 76742825,
+          "notes": [
+            "Six invoice and quotation designs with your logo, colour, address and business details.",
+            "Use on two phones: they take turns through your Google Drive, and the second phone can restore straight from Drive.",
+            "Units on items, such as 3 hrs or 5 kg, printed on invoices and quotations.",
+            "Phone lock, reset of the backup passphrase and recovery code, and amounts hidden on Home until you choose to show them.",
+            "Works on almost every Android phone. This file is large (about 77 MB) because it fits every phone type."
+          ]
+        }
+      ]
     },
     {
       "id": "bukhari",
