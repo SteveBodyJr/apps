@@ -383,6 +383,18 @@
       ],
       "releases": [
         {
+          "version": "1.6.1",
+          "date": "2026-11-07",
+          "tag": "beaverfinance-v1.6.1",
+          "file": "Beaver-Finance-v1.6.1-universal.apk",
+          "size": 23867185,
+          "notes": [
+            "AI sorting now works with the service you choose: Claude, OpenAI, Gemini, or any OpenAI-compatible service such as OpenRouter, DeepSeek or Groq. Find models lists what your key can use, quick ones first, and Check and save tests it before saving.",
+            "Wallet messages opens faster, even with hundreds of messages waiting.",
+            "Still optional: everything works without AI, and the app is no bigger."
+          ]
+        },
+        {
           "version": "1.6.0",
           "date": "2026-11-07",
           "tag": "beaverfinance-v1.6.0",
