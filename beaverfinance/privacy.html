@@ -39,7 +39,7 @@
   </header>
 
   <div class="card">
-    <p class="short"><strong>In short:</strong> your money records stay on your phone, encrypted. Backups you choose to send to Google Drive are encrypted before they leave the phone. Digital Beaver has no server, no account system and doesn't collect, see or sell anything.</p>
+    <p class="short"><strong>In short:</strong> your money records stay on your phone, encrypted. Backups you choose to send to Google Drive are encrypted before they leave the phone. Digital Beaver has no server, no account system and doesn't collect, see or sell anything. Text messages are read only if you turn that on, and only on the phone; message text goes to an AI service only if you add your own key for it.</p>
 
     <h2>What the app stores</h2>
     <p>Everything you enter stays in an encrypted database in the app's private storage on your phone: accounts, transactions, clients, invoices, quotations, projects, contracts, budgets, notes and your settings. Logos, receipt photos and documents you add are kept in the same private storage. Other apps can't read it, and Android's own cloud backup is turned off for this app.</p>
@@ -49,6 +49,14 @@
     <p>If you turn on <strong>Use on two phones</strong>, both phones read and write those same encrypted files in your Drive to take turns. Nothing passes through any other server.</p>
     <p>You can also save or share a backup file yourself; it goes only where you send it.</p>
 
+    <h2>Wallet messages (SMS)</h2>
+    <p>If you turn on <strong>Wallet messages</strong>, the app reads confirmation messages from mobile money and bank senders (M-Pesa, Mixx by Yas, Airtel Money, HaloPesa, Selcom Pesa and CRDB) to turn them into transactions for you to check. Messages from any other sender are skipped on the phone and never read by the app. What it reads is kept in the same encrypted database as the rest of your records and is never sent to Digital Beaver.</p>
+    <p>With message alerts on, the app also notices when a message that looks like a money confirmation arrives from an ordinary phone number, and warns you that it may be fake. Only that warning is kept, on the phone.</p>
+    <p>You can instead share or paste a message into the app yourself. You can turn reading off at any time in the app, or take the permission away in Android's settings.</p>
+
+    <h2>AI sorting (optional)</h2>
+    <p>AI sorting is off unless you add your own Anthropic API key. When it is on, wallet messages the app can't sort by itself are sent to Anthropic's Claude service to suggest what they are, together with the names of your expense categories, income categories, clients and suppliers so it can choose among them. Phone numbers, account numbers and card numbers are removed before sending. This goes directly from your phone to Anthropic under your own key and account, and Anthropic's own privacy terms apply to it. The key is kept in the phone's protected storage and is never put in backups. Remove the key in the app to turn AI sorting off.</p>
+
     <h2>What we collect</h2>
     <p>Nothing. There are no ads, no analytics, no crash reporting and no tracking, and no account with Digital Beaver.</p>
 
@@ -57,7 +65,8 @@
 
     <h2>Permissions</h2>
     <ul>
-      <li><strong>Internet and network state</strong>: only for Google Drive backups and the two-phone option.</li>
+      <li><strong>Internet and network state</strong>: only for Google Drive backups, the two-phone option, and AI sorting if you turn it on.</li>
+      <li><strong>Read and receive SMS</strong>: only if you turn on wallet messages, to read confirmations from the mobile money and bank senders listed above and to warn you about fake ones. The app never sends SMS.</li>
       <li><strong>Fingerprint or face, and your screen lock</strong>: to lock the app with your phone's own lock, if you leave that on. The app never sees your fingerprint or PIN; Android checks them.</li>
       <li><strong>Notifications, run at startup and keep awake</strong>: for reminders such as due invoices and to-dos, which are made on the phone.</li>
       <li><strong>Photos and files</strong>: the app opens only the logo, receipt or document you pick. It never browses your files or photos on its own.</li>
