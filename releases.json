@@ -356,6 +356,22 @@
       ]
     },
     {
+      "id": "beaverfinance",
+      "name": "Beaver Finance",
+      "icon": "icons/beaverfinance.svg",
+      "color": "#111111",
+      "tagline": "Money, invoices, quotations, clients and projects for a small business, all on your phone and encrypted. Six invoice designs with your logo and colour, a phone lock, encrypted Google Drive backups, and two phones that take turns.",
+      "package": "tz.co.luotech.finance",
+      "minAndroid": "7.0",
+      "links": [
+        {
+          "label": "Privacy policy",
+          "url": "https://stevebodyjr.github.io/apps/beaverfinance/privacy.html"
+        }
+      ],
+      "releases": []
+    },
+    {
       "id": "bukhari",
       "name": "Sahih Al Bukhari",
       "group": "deen",
