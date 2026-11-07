@@ -360,7 +360,7 @@
       "name": "Beaver Finance",
       "icon": "icons/beaverfinance.svg",
       "color": "#111111",
-      "tagline": "Money, invoices, quotations, clients and projects for a small business, all on your phone and encrypted. Six invoice designs with your logo and colour, a phone lock, encrypted Google Drive backups, and two phones that take turns.",
+      "tagline": "Money, invoices, quotations, clients, projects and investments for a small business, all on your phone and encrypted. Six invoice designs with your logo and colour, a phone lock, encrypted Google Drive backups, and two phones that take turns.",
       "package": "tz.co.luotech.finance",
       "minAndroid": "7.0",
       "links": [
