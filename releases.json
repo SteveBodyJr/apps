@@ -371,6 +371,19 @@
       ],
       "releases": [
         {
+          "version": "1.5.0",
+          "date": "2026-11-07",
+          "tag": "beaverfinance-v1.5.0",
+          "file": "Beaver-Finance-v1.5.0-universal.apk",
+          "size": 23637653,
+          "notes": [
+            "Investments: track shares, bills and bonds, deposits, land or a business. Put money in from an account, take it out, record earnings, set what it is worth now, and move money from one investment to another.",
+            "Much smaller download: 24 MB instead of 77 MB.",
+            "Amounts on Home stay hidden until you choose to show them, and the choice is remembered. The Accounts page follows it.",
+            "Units on items (3 hrs, 5 kg), six invoice designs, two phones taking turns through Google Drive."
+          ]
+        },
+        {
           "version": "1.4.1",
           "date": "2026-11-07",
           "tag": "beaverfinance-v1.4.1",
