@@ -383,6 +383,19 @@
       ],
       "releases": [
         {
+          "version": "1.6.0",
+          "date": "2026-11-07",
+          "tag": "beaverfinance-v1.6.0",
+          "file": "Beaver-Finance-v1.6.0-universal.apk",
+          "size": 23841249,
+          "notes": [
+            "Wallet messages: M-Pesa, Mixx by Yas, Airtel Money, HaloPesa, Selcom Pesa and CRDB confirmations become transactions for you to check and record. Turn on reading, share a message to the app, or paste several at once.",
+            "It works out fees and levies, moves to cash or your bank, payments for your invoices and your clients, and learns your choices for each person. The wallet balance double-checks every message, and nothing is counted twice.",
+            "Warns you about fake 'money received' messages sent from a phone number, and can tell you when a wallet message arrives.",
+            "Optional: record clear ones by themselves (with undo), see each wallet's month and fees, and AI sorting with your own Anthropic API key. Everything works without AI."
+          ]
+        },
+        {
           "version": "1.5.0",
           "date": "2026-11-07",
           "tag": "beaverfinance-v1.5.0",
