@@ -11,6 +11,18 @@
       "minAndroid": "8.0",
       "releases": [
         {
+          "version": "1.7.0",
+          "date": "2026-11-07",
+          "tag": "until-v1.7.0",
+          "file": "Until-v1.7.0.apk",
+          "size": 3964090,
+          "notes": [
+            "Ring like an alarm: choose which moments ring loudly, even on silent, until you stop them",
+            "Full-screen alarm page with Stop and Snooze 10 minutes",
+            "Pick the alarm sound in Settings, and try it with Try the alarm"
+          ]
+        },
+        {
           "version": "1.6.1",
           "date": "2026-10-31",
           "tag": "until-v1.6.1",
